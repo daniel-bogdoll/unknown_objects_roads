@@ -1,0 +1,92 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cluster & 3D detection",
+            "type": "python",
+            "request": "launch",
+            "python": "${command:python.interpreterPath}",
+            "program": "clustering/cluster.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--road_path",
+                "results/road_mask",
+                "--lidar_path",
+                "results/lidar",
+                "--prediction_path",
+                "results/detection_pred.pkl",
+                "--output_path",
+                "results",
+                "--visual",
+                "--online",
+                "--overwrite",
+                "--save_road_mesh"
+            ]
+        },
+        {
+            "name": "Save road reconstruction",
+            "type": "python",
+            "request": "launch",
+            "python": "${command:python.interpreterPath}",
+            "program": "clustering/road_reconstruct.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--root_path",
+                "results",
+                "--road_path",
+                "results/road_mask",
+                "--output_path",
+                "road_mesh"
+            ]
+        },
+        {
+            "name": "Visualize 3D detection",
+            "type": "python",
+            "request": "launch",
+            "python": "${command:python.interpreterPath}",
+            "program": "clustering/visualize.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--root_path",
+                "results",
+                "--prediction_path",
+                "results/detection_pred.pkl",
+                // "--online",
+                // "--overwrite"
+            ]
+        },
+        {
+            "name": "Visualize road reconstruction",
+            "type": "python",
+            "request": "launch",
+            "python": "${command:python.interpreterPath}",
+            "program": "clustering/visualize_road_recon.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--root_path",
+                "results",
+                "--online",
+                "--overwrite"
+            ]
+        },
+        {
+            "name": "Visualize pipeline",
+            "type": "python",
+            "request": "launch",
+            "python": "${command:python.interpreterPath}",
+            "program": "visualize_pipeline.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--root_path",
+                "results/visualizations",
+                // "--online",
+                // "--overwrite",
+                // "--num_frame",
+                // "1000"
+            ]
+        }
+    ]
+}

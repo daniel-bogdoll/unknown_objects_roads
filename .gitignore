@@ -1,0 +1,19 @@
+data_object_calib
+open3d_downloads
+__pycache__
+training
+data_odometry_labels
+**/*.ply
+clustering/prototyping/test_data/download_file_list.json
+clustering/prototyping/waymo/final_road_mask
+clustering/prototyping/waymo/lidar_data
+clustering/prototyping/semantic_kitti/dataset
+results
+tmp_results
+
+*.code-workspace
+# OSX dir files
+*.DS_Store
+.DS_Store
+visualizations/pipeline_vis-long.mov
+visualizations/pipeline_vis-short.mov

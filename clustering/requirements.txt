@@ -1,0 +1,5 @@
+numpy=1.19.5
+open3d=0.14.1
+matplotlib=3.5.0
+opencv-contrib-python=4.5.2.54
+pickle

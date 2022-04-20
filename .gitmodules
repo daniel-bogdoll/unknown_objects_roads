@@ -1,0 +1,6 @@
+[submodule "mseg-semantic"]
+	path = mseg-semantic
+	url = https://github.com/Christin95/mseg-semantic.git
+[submodule "CenterPoint"]
+	path = CenterPoint
+	url = https://github.com/tianweiy/CenterPoint
