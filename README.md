@@ -20,7 +20,7 @@ For each scene, we make use of camera (a) and lidar (b) data. Semantic segmentat
 ## How to use the code
 ### Semantic Segmentation 
 1. Clone this repo
-2. Navigate to the folder /test/mseg-semantic
+2. Navigate to the folder mseg_semantic
 3. Install the mseg_semantic module by running `$ pip install -e ./mseg_semantic`. 
 Make sure that you can run `$ python -c "import mseg_semantic; print('hello world')"` in python
 4. Navigate to the folder /mseg_semantic/mseg-api
