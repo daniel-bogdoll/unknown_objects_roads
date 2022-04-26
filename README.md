@@ -16,8 +16,6 @@ If this fails, a so-called corner case is detected, where an unknown object is d
 
 For each scene, we make use of camera (a) and lidar (b) data. Semantic segmentation is applied to the camera image to identify the road, our area of interest (c). These road pixels are then projected into the lidar space (d). The following corner case proposal generation is divided into several steps. First, the point cloud is cropped to only consider the front view. Next, the projected road plane is re-estimated using RANSAC to account for inaccuracies. Alpha shape reconstruction of the plane is used to identify the points of objects that lay on the road. Those points are then clustered via DBSCAN to generate corner case proposals. Next, CenterPoint object detection is applied, and cluster without classifications are marked as anomalies, creating an intermediate anomaly proposal (e). The bounding boxes of those possible anomalies are then mapped onto the 2D camera space (f). Based on a list of classes we deem normal, CLIP classifies them as either an anomaly or one of the non-anomaly classes, producing the final anomaly detection (g).
 
-https://github.com/daniel-bogdoll/unknown_objects_roads/blob/7fe9f9d4858ddd7c4075676cb7a94a8b4b60a733/visualizations/pipeline_vis-short.mp4
-
 ## Repository Structure
 ```bash
 ├── CenterPoint       # CenterPoint implementation
