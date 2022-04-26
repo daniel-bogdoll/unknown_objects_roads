@@ -10,15 +10,11 @@ Topic: To scale autonomous vehicles from small testing regions to the whole worl
 
 If this fails, a so-called corner case is detected, where an unknown object is detected in a relevant position. Such a system can be used online to detect challenging scenarios or offline as part of an active learning pipeline. This lab project will start with publicly available datasets. Frequently though, these do not contain enough interesting data. Therefore, after analyzing available datasets, it will be determined if a simulation of relevant scenes will be performed in the simulation environment CARLA.
 
-## Distribution of Tasks
+## Overview of anomaly detection pipeline
 
-Task 1: Detect lanes and the available driving area on image & lidar data to determine relevant positions in the environment - Christin Scheib
+![Pipeline](./figures/Pipeline_Overview.jpg)
 
-Task 2: Detect clusters in lidar point clouds within these regions and classify them, if possible -  Maximilian Nitsche
-
-Task 3: For clusters that the lidar cannot classify, project the lidar points into the image space and try to detect an object within this ROI in the image space - Enrico Eisen
-
-![Pipeline](./figures/pipeline_overview.png)
+For each scene, we make use of camera (a) and lidar (b) data. Semantic segmentation is applied to the camera image to identify the road, our area of interest (c). These road pixels are then projected into the lidar space (d). The following corner case proposal generation is divided into several steps. First, the point cloud is cropped to only consider the front view. Next, the projected road plane is re-estimated using RANSAC to account for inaccuracies. Alpha shape reconstruction of the plane is used to identify the points of objects that lay on the road. Those points are then clustered via DBSCAN to generate corner case proposals. Next, CenterPoint object detection is applied, and cluster without classifications are marked as anomalies, creating an intermediate anomaly proposal (e). The bounding boxes of those possible anomalies are then mapped onto the 2D camera space (f). Based on a list of classes we deem normal, CLIP classifies them as either an anomaly or one of the non-anomaly classes, producing the final anomaly detection (g).
 
 
 ## How to use the code
