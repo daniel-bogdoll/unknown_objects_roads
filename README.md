@@ -39,3 +39,12 @@ Make sure that you can run `$ python -c "import mseg_semantic; print('hello worl
 4. Visualization of 3D anomaly detection results `$ python clustering/visualize.py --root_path results --prediction_path results/detection_pred.pkl --online` (or use the already setup VS Code tasks [here](.vscode/launch.json)
 
 5. Visualization of pipeline results `$ python visualize_pipeline.py --root_path results/visualizations --online` (or use the already setup VS Code tasks [here](.vscode/launch.json)
+
+### BBox Mapping in image space and 2D classification
+
+1. Navigate to the folder /2d_classification
+2. Install reqirements.txt `$ pip install -r requirements.txt`
+3. Run the bounding box mapping script `$ python bbox_mapping.py --camera-path /path_for_raw_images/ --calibration-path /path_for_calibration_files/ --clustering-path /path_for_clustering/ --directory-path /path_for_target_folder/`
+4. Run the CLIP 2D classification script `$ python clip.py --directory-path /path_for_target_folder/`
+5. Run the coloring script to color bounding boxes depending if anomaly or not `$ python images_coloring.py --camera-path /path_for_raw_images --calibration-path /path_for_calibration_files/ --directory-path /path_for_target_folder/ `
+6. Run the skript that counts and collects files with anomalies `$ python find_anomalies.py --directory-path /path_for_target_folder/`
