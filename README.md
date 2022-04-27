@@ -18,7 +18,7 @@ For each scene, we make use of camera (a) and lidar (b) data. Semantic segmentat
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/YRlZFhbzw3Q/0.jpg)](http://www.youtube.com/watch?v=YRlZFhbzw3Q "Multimodal Detection of Unknown Objects on Roads for Autonomous Driving [short]")
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/yGfA55FAXdI/0.jpg)](http://www.youtube.com/watch?v=yGfA55FAXdI "Multimodal Detection of Unknown Objects on Roads for Autonomous Driving [long]")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/p4baatp9bUk/0.jpg)](http://www.youtube.com/watch?v=p4baatp9bUk "Multimodal Detection of Unknown Objects on Roads for Autonomous Driving [long]")
 
 ## Repository Structure
 ```bash
