@@ -1,5 +1,9 @@
 # Multimodal Detection of Unknown Objects on Roads for Autonomous Driving
 
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/YRlZFhbzw3Q/0.jpg)](http://www.youtube.com/watch?v=YRlZFhbzw3Q "Multimodal Detection of Unknown Objects on Roads for Autonomous Driving [short]")
+
+
+
 ## Method 
 Object detection, lane detection, semantic segmentation
 Topic: To scale autonomous vehicles from small testing regions to the whole world, the reliability of machine learning systems is critical, especially regarding object detection for such which are in proximity to the planned trajectory of an autonomous vehicle. Therefore, this lab topic covers three main tasks:
