@@ -1,7 +1,5 @@
 # Multimodal Detection of Unknown Objects on Roads for Autonomous Driving
 
-## Code and supplementary materials
-
 Repository of the paper **[Multimodal Detection of Unknown Objects on Roads for Autonomous Driving](https://arxiv.org/abs/2205.01414)**.
 
 ## Method 
