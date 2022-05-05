@@ -61,3 +61,14 @@ Make sure that you can run `$ python -c "import mseg_semantic; print('hello worl
 4. Run the CLIP 2D classification script `$ python clip.py --directory-path /path_for_target_folder/`
 5. Run the coloring script to color bounding boxes depending if anomaly or not `$ python images_coloring.py --camera-path /path_for_raw_images --calibration-path /path_for_calibration_files/ --directory-path /path_for_target_folder/ `
 6. Run the skript that counts and collects files with anomalies `$ python find_anomalies.py --directory-path /path_for_target_folder/`
+
+## Citation
+If you find this code useful for your research, please cite our paper:
+```
+@article{Bogdoll_Multimodal_2022_arXiv,
+  author    = {Bogdoll, Daniel and Eisen, Enrico and Scheib, Christin and Nitsche, Maximilian and Z\"{o}llner, J. Marius},
+  title     = {{Multimodal Detection of Unknown Objects on Roads for Autonomous Driving}}, 
+  journal   = {arXiv preprint:2205.01414},
+  year      = {2022}
+}
+```
