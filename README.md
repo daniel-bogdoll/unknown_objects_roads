@@ -3,8 +3,7 @@
 Repository of the paper **[Multimodal Detection of Unknown Objects on Roads for Autonomous Driving](https://arxiv.org/abs/2205.01414)**.
 
 ## Method 
-Object detection, lane detection, semantic segmentation
-Topic: To scale autonomous vehicles from small testing regions to the whole world, the reliability of machine learning systems is critical, especially regarding object detection for such which are in proximity to the planned trajectory of an autonomous vehicle. Therefore, this lab topic covers three main tasks:
+To scale autonomous vehicles from small testing regions to the whole world, the reliability of machine learning systems is critical, especially regarding object detection for such which are in proximity to the planned trajectory of an autonomous vehicle. Therefore, this lab topic covers three main tasks:
 
 - Detect lanes and the available driving area on image & lidar data to determine relevant positions in the environment.
 - Detect clusters in lidar point clouds within these regions and classify them, if possible.
