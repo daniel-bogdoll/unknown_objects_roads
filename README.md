@@ -1,6 +1,6 @@
 # Multimodal Detection of Unknown Objects on Roads for Autonomous Driving
 
-Repository of the paper **[Multimodal Detection of Unknown Objects on Roads for Autonomous Driving](https://arxiv.org/abs/2205.01414)**.
+Repository of the paper **[Multimodal Detection of Unknown Objects on Roads for Autonomous Driving](https://arxiv.org/abs/2205.01414)**, aceppted at [IEEE SMC 2022](https://ieeesmc2022.org/).
 
 ## Method 
 To scale autonomous vehicles from small testing regions to the whole world, the reliability of machine learning systems is critical, especially regarding object detection for such which are in proximity to the planned trajectory of an autonomous vehicle. Therefore, this lab topic covers three main tasks:
