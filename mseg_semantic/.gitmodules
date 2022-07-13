@@ -1,0 +1,3 @@
+[submodule "mseg-api"]
+	path = mseg-api
+	url = https://github.com/Christin95/mseg-api.git
