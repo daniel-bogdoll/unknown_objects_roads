@@ -23,12 +23,12 @@ Short (left) and long (right) video demonstrations are available:
 
 ## Repository Structure
 ```bash
-├── CenterPoint       # CenterPoint implementation
-├── clustering        # Lidar clustering & visualization scripts
-├── figures           # Figures
-├── visualizations    # Final pipeline visualizations
-├──   
-└──             
+├── CenterPoint         # CenterPoint implementation
+├── clustering          # Lidar clustering & visualization scripts
+├── figures             # Figures
+├── visualizations      # Final pipeline visualizations
+├── mseg_semantic       # Semantic segmentation  
+└── waymo_tf_extraction # Helper scripts for the Waymo dataset             
 ```
 
 ## How to use the code
