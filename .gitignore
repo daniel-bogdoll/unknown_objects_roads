@@ -17,3 +17,6 @@ tmp_results
 .DS_Store
 visualizations/pipeline_vis-long.mov
 visualizations/pipeline_vis-short.mov
+
+# Virtual Environment
+env
