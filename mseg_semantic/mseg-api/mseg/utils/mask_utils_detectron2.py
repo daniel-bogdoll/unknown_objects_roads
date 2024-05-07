@@ -516,10 +516,10 @@ class Visualizer:
                 # plt.imshow(self.output.get_image())
                 # plt.show()
             if save_coordinates == True:      
-                if not os.path.isdir("/disk/vanishing_data/zl254/road_coordinates/waymo/testing2"):
-                    os.makedirs("/disk/vanishing_data/zl254/road_coordinates/waymo/testing2")
+                if not os.path.isdir("/<path>/road_coordinates/waymo/testing2"):
+                    os.makedirs("/<path>/road_coordinates/waymo/testing2")
 
-                with open('/disk/vanishing_data/zl254/road_coordinates/waymo/testing2/{}.pkl'.format(image_name), 'wb') as handle:
+                with open('/<path>/road_coordinates/waymo/testing2/{}.pkl'.format(image_name), 'wb') as handle:
                     pickle.dump(coordinates, handle, protocol=pickle.HIGHEST_PROTOCOL)
         return self.output.get_image()
 

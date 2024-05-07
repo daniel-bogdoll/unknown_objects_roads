@@ -493,7 +493,7 @@ class InferenceTask:
                 label_map=gray_img, id_to_class_name_map=self.id_to_class_name_map, image_name = image_name
             )
             
-            out_path_overlaid = '/disk/vanishing_data/zl254/mseg-semantic_results/waymo/testing2'
+            out_path_overlaid = '/<path>/mseg-semantic_results/waymo/testing2'
             if not os.path.isdir(out_path_overlaid):
                 os.makedirs(out_path_overlaid)
             

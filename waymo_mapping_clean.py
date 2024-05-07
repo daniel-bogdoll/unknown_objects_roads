@@ -25,10 +25,10 @@ def display_laser_on_image(img, pcl, vehicle_to_image):
     return proj_pcl_all
 
 
-road_coordinates_path = "/disk/vanishing_data/zl254/road_coordinates/waymo/testing2"
-camera_path = "/disk/vanishing_data/zl254/waymo_extraction_all/testing/camera"
-lidar_path = "/disk/vanishing_data/zl254/waymo_extraction_all/testing/lidar"
-calibration_path = "/disk/vanishing_data/zl254/waymo_extraction_calibration/testing/calibration"
+road_coordinates_path = "/<path>/road_coordinates/waymo/testing2"
+camera_path = "/<path>/waymo_extraction_all/testing/camera"
+lidar_path = "/<path>/waymo_extraction_all/testing/lidar"
+calibration_path = "/<path>/waymo_extraction_calibration/testing/calibration"
 
 directory_road = os.listdir(road_coordinates_path)
 print(len(directory_road))
@@ -115,7 +115,7 @@ for file in directory_road:
                 road_list_3d.append(street_point_3d)
       
         # save all the points from the point cloud that are on the street
-        with open('/disk/vanishing_data/zl254/waymo_extraction_all/testing/results/final_road_mask/{}.pkl'.format(filename), 'wb') as f:
+        with open('/<path>/waymo_extraction_all/testing/results/final_road_mask/{}.pkl'.format(filename), 'wb') as f:
             pickle.dump(road_list_3d, f)
        
       
