@@ -500,7 +500,7 @@ class InferenceTask:
             out_path_overlaid_img = out_path_overlaid + '/' + '{}.jpg'.format(image_name)
             
             
-            #out_path_gray = '/fzi/ids/zl254/no_backup/mseg-semantic/temp_files/gray/{}.jpg'.format(image_name)
+            #out_path_gray = '/<path>/mseg-semantic/temp_files/gray/{}.jpg'.format(image_name)
             cv2.imwrite(out_path_overlaid_img, overlaid_img)
             #cv2.imwrite(out_path_gray, gray_img)
 
